@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let value = prompt("Enter a number: ");
+    let numbers = [-3, 5, 1, 3, 2, 10];
+    let containsYn = false;
+    let indexValue;
+    for (let i = 0; i < numbers.length; i++) {
+        if (value == numbers[i]) {
+            containsYn = true;
+            indexValue = i;
+            break;
+        }
+    }
+
+    if(containsYn == false){
+        alert("no value found");
+    }else {
+        alert("Value " + value + " found at " + indexValue);
+    }
+
+</script>
+</body>
+</html>
